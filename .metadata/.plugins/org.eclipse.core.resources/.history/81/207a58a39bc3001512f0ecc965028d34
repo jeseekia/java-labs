@@ -55,7 +55,7 @@ public class RoomSize {
 			userContinue = input.nextLine();
 			
 			
-		} while (userContinue.equals("y") == true);
+		} while (userContinue == "y");
 			
 	}
 

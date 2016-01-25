@@ -17,10 +17,11 @@ public class RoomSize {
 			String userContinue;
 		//Welcome user
 		System.out.println("Welcome to the Grand Circus Room Detail Generator!\n\n");
-		//Create a scanner to read numerical user input
-		Scanner input = new Scanner(System.in);
+		
 		
 		do {
+			//Create a scanner to read numerical user input
+			Scanner input = new Scanner(System.in);
 			
 			
 			//Prompt user for length in meters	
@@ -48,15 +49,18 @@ public class RoomSize {
 			System.out.println("Perimeter: " + perimeter);
 			
 			
-			
-			
+			//Create a new scanner to read string user input
+			Scanner input2 = new Scanner(System.in);
 			//Ask user if they would like to continue
 			System.out.println("Would you like to continue?");
-			userContinue = input.nextLine();
+			userContinue = input2.next();
+			input2.nextLine();
 			
-			
-		} while (userContinue.equals("y") == true);
-			
+		} while (userContinue == "y");
+		
+		
+		
+		
 	}
 
 }
