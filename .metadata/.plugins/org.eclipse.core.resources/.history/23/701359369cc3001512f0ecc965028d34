@@ -56,10 +56,6 @@ public class RoomSize {
 			
 			
 		} while (userContinue.equals("y") == true);
-		
-		if(userContinue.equals("n") == true) {
-			System.out.println("The program will exit now.");
-		}
 			
 	}
 
