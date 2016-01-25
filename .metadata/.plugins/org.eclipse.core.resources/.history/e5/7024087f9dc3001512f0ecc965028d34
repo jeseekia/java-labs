@@ -21,6 +21,8 @@ public class RoomSize {
 		Scanner input = new Scanner(System.in);
 		
 		do {
+			
+			
 			//Prompt user for length in meters	
 			System.out.println("Enter the length of your room in meters: ");
 			double length = input.nextInt();
@@ -60,15 +62,14 @@ public class RoomSize {
 			
 			
 			//Ask user if they would like to continue
-			System.out.println("Would you like to continue?(y/n)");
+			System.out.println("Would you like to continue?");
 			userContinue = input.nextLine();
 			
 			
-		} while (userContinue.equalsIgnoreCase("y") == true);
+		} while (userContinue.equals("y") == true);
 		
-		if(userContinue.equalsIgnoreCase("n") == true) {
+		if(userContinue.equals("n") == true) {
 			System.out.println("The program will exit now.");
-			input.close();
 		}
 			
 	}

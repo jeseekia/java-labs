@@ -64,9 +64,9 @@ public class RoomSize {
 			userContinue = input.nextLine();
 			
 			
-		} while (userContinue.equalsIgnoreCase("y") == true);
+		} while (userContinue.equals("y") == true);
 		
-		if(userContinue.equalsIgnoreCase("n") == true) {
+		if(userContinue.equals("n") == true) {
 			System.out.println("The program will exit now.");
 			input.close();
 		}
