@@ -43,7 +43,7 @@ public class RoomSize {
 			double area = length * width;
 			
 			//Calculate the perimeter
-			double perimeter = 2 * (length + width);
+			double perimeter = 2 * (area);
 			
 			//Calculate the volume
 			double volume = length * width * height;
@@ -54,9 +54,6 @@ public class RoomSize {
 			
 			//Return the perimeter
 			System.out.println("Perimeter: " + perimeter);
-			
-			//Return the volume
-			System.out.println("Volume: " + volume);
 			
 			
 			
