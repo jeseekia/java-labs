@@ -60,12 +60,13 @@ public class RoomSize {
 				userContinue = input.nextLine();
 
 			} while (userContinue.equalsIgnoreCase("y") == true);
+			
 			if (userContinue.equalsIgnoreCase("n") == true) {
 				System.out.println("The program will exit now.");
 				input.close();
 			} 
 		} catch (Exception e) {
-			System.out.println("Error! You did not enter a positive number.");
+			System.out.println("Error!");
 		}
 			
 	}

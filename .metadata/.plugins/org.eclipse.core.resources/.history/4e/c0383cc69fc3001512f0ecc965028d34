@@ -65,7 +65,7 @@ public class RoomSize {
 				input.close();
 			} 
 		} catch (Exception e) {
-			System.out.println("Error! You did not enter a positive number.");
+			System.out.println("Error!");
 		}
 			
 	}
