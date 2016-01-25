@@ -1,16 +1,7 @@
 import java.util.Scanner;
 
 /**
- * This application is Lab 1 for January 2016 Java Bootcamp
- * The application has the following features:
- * 	Prompts the user to enter values of length and width of the classroom
- * 	Displays the area and perimeter of that classroom
- * 	Prompts the user to continue - keep measuring rooms
- * 	Only continues if the user agrees
- * 	Calculates the volume of the room
- * 	Ignores the case when asking whether the user wants to continue
- * 	Handles the exception if the user does not input a number for any room measurement
- * 	
+ * 
  */
 
 /**
