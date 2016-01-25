@@ -69,21 +69,13 @@ public class RoomSize {
 				userContinue = input.nextLine();
 
 			} while (userContinue.equalsIgnoreCase("y") == true);
-			
-			//If the user enters n or N the program will confirm exiting and close the input resource
 			if (userContinue.equalsIgnoreCase("n") == true) {
 				System.out.println("The program will exit now.");
 				input.close();
 			} 
 		} catch (Exception e) {
-			//Throws an exception if the user does not enter a positive number
 			System.out.println("Error! You did not enter a positive number.");
 		}
-			//Allows the program to confirm with the user that they did not enter y/n/Y/N and exits the program
-			//Introduces an issue with the if-statement that checks if userContinue == y
-			finally {
-				System.out.println("You did not enter a proper response (y/n). The program will exit now.");
-			}
 			
 	}
 
