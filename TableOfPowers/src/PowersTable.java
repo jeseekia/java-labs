@@ -13,17 +13,17 @@ public class PowersTable {
 		int jeseekia = 1;
 		
 
-				
+		System.out.println("Number\t\tSquared\t\tCubed");
+		System.out.println("=======\t\t=======\t\t======");
+		
 				for(int j=1; j<=userNumber; j++){
 					
 					int number = power(j,2);
 					int number2 = power(j,3);
-					System.out.println(j);
-					System.out.println(number);
-					System.out.println(number2);
+					System.out.printf("%d\t\t%d\t\t%d\n",j,number,number2);
 				}
 		
-
+		
 	}
 
 	/**
