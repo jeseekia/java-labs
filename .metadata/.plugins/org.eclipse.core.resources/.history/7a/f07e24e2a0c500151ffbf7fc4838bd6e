@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class PowersTable {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		String confirm;
+		boolean calculateOn = false;
+		
+		System.out.println("Enter your number: ");
+		int userNumber = scan.nextInt();
+		
+		
+		//Output column headings
+		System.out.println("Number\t\tSquared\t\tCubed");
+		System.out.println("=======\t\t=======\t\t======");
+		
+		
+		
+			do {
+				//Display the number j, it's square, and cube from 1 until the number entered by the user, inclusive	
+				for (int j = 1; j <= userNumber; j++) {
+
+					int number = power(j, 2);
+					int number2 = power(j, 3);
+					System.out.printf("%d\t\t%d\t\t%d%n", j, number, number2);//%n helps this line to generate an appropriate new line character for all platforms
+				} 
+				System.out.println("Would you like to continue?(\"yes\"/\"no\")");
+				confirm = scan.nextLine();
+				
+				if(confirm.equalsIgnoreCase("yes") || confirm.equalsIgnoreCase("y")) {
+					calculateOn = true;
+				} else if(confirm.equalsIgnoreCase("no") || confirm.equalsIgnoreCase("n")) {
+					calculateOn = false;
+				} else {
+					System.out.println("It looks like you didn't enter a valid answer.");
+					System.out.println("Would you like to continue?(\"yes\"/\"no\"");
+					confirm = scan.nextLine();
+				}
+				
+				
+				
+			} while (calculateOn);
+			
+		scan.close();
+		
+	}
+
+	/**
+	 * @param x
+	 * @param y
+	 * @return
+	 */
+	public static int power(int x, int y) {
+		int result=1;
+		for (int i = 1; i <= y; i++) {
+            result = result * x;
+		}
+		return result;
+	}	
+
+}
