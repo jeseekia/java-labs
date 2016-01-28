@@ -20,7 +20,7 @@ public class PowersTable {
 					
 					int number = power(j,2);
 					int number2 = power(j,3);
-					System.out.printf("%d\t\t%d\t\t%d\n",j,number,number2);
+					System.out.printf("%d\t\t%d\t\t%d%n",j,number,number2);
 				}
 		
 		
