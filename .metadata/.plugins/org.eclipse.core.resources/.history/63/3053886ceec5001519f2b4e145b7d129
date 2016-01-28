@@ -29,10 +29,7 @@ public class Factorial {
 		// TODO Auto-generated method stub
 		int n = 2;
 		returnFactorial(5);
-		returnFactorial(4);
-		returnFactorial(3);
-		returnFactorial(2);
-		returnFactorial(1);
+		
 		
 	}
 	

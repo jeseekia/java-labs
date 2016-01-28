@@ -28,11 +28,13 @@ public class Factorial {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int n = 2;
-		returnFactorial(5);
-		returnFactorial(4);
-		returnFactorial(3);
-		returnFactorial(2);
-		returnFactorial(1);
+		int result = n;
+		for(int i=n; i>1; i--) {
+			result*=(n-1);
+			System.out.println(result);
+			n--;
+		}
+		
 		
 	}
 	
@@ -40,9 +42,9 @@ public class Factorial {
 		int result = n;
 		for(int i=n; i>1; i--) {
 			result*=(n-1);
+			//System.out.println(result);
 			n--;
 		}
-		System.out.println(result);
 		return result;
 	}
 	
