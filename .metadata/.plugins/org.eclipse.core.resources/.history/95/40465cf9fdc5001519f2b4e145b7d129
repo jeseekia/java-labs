@@ -31,7 +31,7 @@ public class Factorial {
 		// TODO Auto-generated method stub
 	Scanner input = new Scanner(System.in);
 	int userInteger;
-	String userContinue;
+	
 	
 	do {
 		System.out.println("Enter an integer");
@@ -41,27 +41,11 @@ public class Factorial {
 		}
 		userInteger = input.nextInt();
 		returnFactorial(userInteger);
-		input.nextLine();
-		
-		System.out.println("Would you like to continue?(y/n)");
-		userContinue = input.nextLine();
-		
 	} while (userContinue.equalsIgnoreCase("y") == true);
-	
-	boolean isValidChoice = userContinue.matches("^[ynYN]$");
-		while (!isValidChoice) {
-			System.out.println("That is not a valid option");
-			System.out.println("Continue?");
-			userContinue = input.nextLine();
-		isValidChoice = userContinue.matches("^[ynYN]$");
-		}
-	
 	if (userContinue.equalsIgnoreCase("n") == true) {
 		System.out.println("The program will exit now.");
 		input.close();
 	} 
-	
-	
 	
 	
 	}

@@ -47,19 +47,10 @@ public class Factorial {
 		userContinue = input.nextLine();
 		
 	} while (userContinue.equalsIgnoreCase("y") == true);
-	
-	boolean isValidChoice = userContinue.matches("^[ynYN]$");
-		while (!isValidChoice) {
-			System.out.println("That is not a valid option");
-			System.out.println("Continue?");
-			userContinue = input.nextLine();
-		isValidChoice = userContinue.matches("^[ynYN]$");
-		}
-	
-	if (userContinue.equalsIgnoreCase("n") == true) {
-		System.out.println("The program will exit now.");
-		input.close();
-	} 
+//	if (userContinue.equalsIgnoreCase("n") == true) {
+//		System.out.println("The program will exit now.");
+//		input.close();
+//	} 
 	
 	
 	
