@@ -33,17 +33,13 @@ public class Factorial {
 	int userInteger;
 	
 	System.out.println("Enter an integer");
-	
-	while(!input.hasNextInt()) {
-		System.out.println("That is not a valid input. Please try again.");
-		input.next();
-	}
-	
 	userInteger = input.nextInt();
+	
 	returnFactorial(userInteger);
 	
+		
+		
 	}
-	
 	
 	public static float returnFactorial(int n) {
 		int result = n;
@@ -59,4 +55,5 @@ public class Factorial {
 	//TODO isValidContinue
 	//TODO isValidInteger
 	
+
 }

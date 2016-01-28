@@ -34,16 +34,17 @@ public class Factorial {
 	
 	System.out.println("Enter an integer");
 	
-	while(!input.hasNextInt()) {
-		System.out.println("That is not a valid input. Please try again.");
-		input.next();
-	}
-	
+	while(input.hasNextInt()) {
 	userInteger = input.nextInt();
+	
+
+	
+	
 	returnFactorial(userInteger);
 	
+		
+		
 	}
-	
 	
 	public static float returnFactorial(int n) {
 		int result = n;
