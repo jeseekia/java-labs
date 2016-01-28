@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * This program is created for the Java Bootcamp Lab 4
  * The application will
@@ -29,15 +27,12 @@ public class Factorial {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	Scanner input = new Scanner(System.in);
-	int userInteger;
-	
-	System.out.println("Enter an integer");
-	userInteger = input.nextInt();
-	
-	returnFactorial(userInteger);
-	
-		
+		int n = 2;
+		returnFactorial(5);
+		returnFactorial(4);
+		returnFactorial(3);
+		returnFactorial(2);
+		returnFactorial(1);
 		
 	}
 	
@@ -50,10 +45,6 @@ public class Factorial {
 		System.out.println(result);
 		return result;
 	}
-	
-	//TODO returnFactorialRecursive
-	//TODO isValidContinue
-	//TODO isValidInteger
 	
 
 }

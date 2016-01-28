@@ -51,7 +51,6 @@ public class Factorial {
 		return result;
 	}
 	
-	//TODO returnFactorialRecursive
 	//TODO isValidContinue
 	//TODO isValidInteger
 	
