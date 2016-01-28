@@ -27,7 +27,7 @@ public class Factorial {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 4;
+		int n = 5;
 		int result = n;
 		for(int i=n; i>2; i--) {
 			result*=(n-1);
