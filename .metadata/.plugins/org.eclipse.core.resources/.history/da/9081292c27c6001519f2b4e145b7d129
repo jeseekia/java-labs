@@ -40,7 +40,7 @@ public class Factorial {
 			input.next();
 		}
 		userInteger = input.nextInt();
-		long factorialNumber = Factorial.returnFactorialRecursive(userInteger);
+		long factorialNumber = Factorial.returnFactorial(userInteger);
 		System.out.println("The factorial of " + userInteger + " is " + factorialNumber +".");
 		input.nextLine();
 		
