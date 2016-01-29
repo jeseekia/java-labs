@@ -61,6 +61,8 @@ public class Factorial {
 		input.close();
 	} 
 	
+	System.out.println(returnFactorialRecursive(5););
+	
 	
 	}
 	
@@ -75,6 +77,7 @@ public class Factorial {
 		return result;
 	}
 	
+	//TODO returnFactorialRecursive
 	public static float returnFactorialRecursive(int n) {
 		if(n==0) {
 			return 1;

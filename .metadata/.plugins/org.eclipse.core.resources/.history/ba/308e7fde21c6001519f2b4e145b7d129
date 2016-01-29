@@ -62,6 +62,8 @@ public class Factorial {
 	} 
 	
 	
+	
+	
 	}
 	
 	
@@ -75,7 +77,8 @@ public class Factorial {
 		return result;
 	}
 	
-	public static float returnFactorialRecursive(int n) {
+	//TODO returnFactorialRecursive
+	public static float returnFactorial(int n) {
 		if(n==0) {
 			return 1;
 		} else {
