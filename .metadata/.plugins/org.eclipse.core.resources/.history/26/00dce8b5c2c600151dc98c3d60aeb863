@@ -32,15 +32,13 @@ public class PigLatin {
 		Scanner input = new Scanner(System.in);
 		String userInput;
 		String userContinue;
-		String userPigLatin;
 		
 		do {
 			System.out.println("Enter a word to be converted to Pig Latin");
-			// TODO Check if the user puts in appropriate input
-//			while ( !valid input   ) {
-//				System.out.println("That is not a valid input. Please try again.");
-//				input.next();
-//			}
+			while ( !valid input   ) {
+				System.out.println("That is not a valid input. Please try again.");
+				input.next();
+			}
 			userInput = input.nextLine();
 			userPigLatin = pigLatin(userInput);
 			System.out.println("Your word has been converted to " + userPigLatin + ".");
@@ -69,7 +67,7 @@ public class PigLatin {
 	public static String pigLatin(String input) {
 		
 		
-		return input;
+		return "Pig Latin";
 	}
 
 }
