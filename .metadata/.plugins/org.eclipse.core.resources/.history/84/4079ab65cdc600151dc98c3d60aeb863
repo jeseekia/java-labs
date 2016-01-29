@@ -84,7 +84,7 @@ public class PigLatin {
 //				System.out.println("Value of: " + newWord); //Test line
 				newWord = newWord.trim().concat(charToString).concat("ay");
 				word = newWord;
-				return word;
+				return newWord;
 			}
 		}
 		return newWord;
