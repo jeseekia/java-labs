@@ -6,7 +6,7 @@
  * @author Jeseekia
  *
  */
-public class Factorial {
+public class PigLatin {
 
 	/**
 	 * @param args
