@@ -40,8 +40,7 @@ public class Factorial {
 			input.next();
 		}
 		userInteger = input.nextInt();
-		long factorialNumber = Factorial.returnFactorialRecursive(userInteger);
-		System.out.println("The factorial of " + userInteger + " is " + factorialNumber +".");
+		returnFactorialRecursive(userInteger);
 		input.nextLine();
 		
 		System.out.println("Would you like to continue?(y/n)");
@@ -83,6 +82,7 @@ public class Factorial {
 		} else {
 			result = n*returnFactorialRecursive(n-1);
 		} 
+		System.out.println(result);
 		return result;
 		
 	}
