@@ -34,7 +34,7 @@ public class Factorial {
 	String userContinue;
 	
 	do {
-		System.out.println("Enter an integer between 1 and 13.");
+		System.out.println("Enter an integer between 1 and 15.");
 		while (!input.hasNextInt()) {
 			System.out.println("That is not a valid input. Please try again.");
 			input.next();

@@ -34,7 +34,7 @@ public class Factorial {
 	String userContinue;
 	
 	do {
-		System.out.println("Enter an integer between 1 and 13.");
+		System.out.println("Enter an integer between 1 and 15.");
 		while (!input.hasNextInt()) {
 			System.out.println("That is not a valid input. Please try again.");
 			input.next();
@@ -65,7 +65,7 @@ public class Factorial {
 	}
 	
 	
-	public static long returnFactorial(int n) {
+	public static float returnFactorial(int n) {
 		int result = n;
 		for(int i=n; i>1; i--) {
 			result*=(n-1);
@@ -75,7 +75,7 @@ public class Factorial {
 		return result;
 	}
 	
-	public static long returnFactorialRecursive(int n) {
+	public static float returnFactorialRecursive(int n) {
 		if(n==0) {
 			return 1;
 		} else {
