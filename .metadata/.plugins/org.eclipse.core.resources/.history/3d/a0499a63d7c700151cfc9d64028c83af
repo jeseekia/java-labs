@@ -81,20 +81,6 @@ public class Game {
 					state = "deadEnd";
 				break;
 				
-				case "watch TV":
-					System.out.println("You can get some good info from the TV. Would you like to watch the \"news\" or your \"favorite channel.");
-					choice = input.nextLine();
-					if(choice.equalsIgnoreCase("news") == true) {
-						state = "deadEnd";
-					} else if (choice.equalsIgnoreCase("favorite channel") == true)
-					{
-						state = "deadEnd";
-					} else {
-						System.out.println("It seems you didn\'t enter a valid input.");
-						state = "deadEnd";
-					}
-			break;
-				
 				case "muffins":
 					System.out.println("You chose muffins! Interesting choice...");
 					state = "deadEnd";
@@ -106,7 +92,7 @@ public class Game {
 				break;
 				
 				
-				case "gameOver": //Game Over State. The game ends from here
+				case "gameOver":
 					gameOn = false;
 					System.out.println("The game is ending...");
 				break;
