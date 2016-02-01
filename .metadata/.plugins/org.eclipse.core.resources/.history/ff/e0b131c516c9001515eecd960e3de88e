@@ -1,0 +1,68 @@
+/**
+ * This application is for Java Bootcamp Lab 7.
+ * Task: Write a program that will recognize invalid inputs when the user requests information about students in a class.
+ * 
+ * This application will:
+ * 		Provide information about students in a class
+ * 		Prompt the user to ask about a particular student
+ * 		Give proper responses according to user-submitted information
+ * 		Ask if user would like to learn about another student
+ * Build Specifications:
+ * 		Account for invalid user input with exceptions
+ * 		Try to incorporate IndexOutOfBoundsException and IllegalArgumentException
+ * Extended Challenges
+ * 		Create other exceptions and catch those too
+ */
+
+/**
+ * @author Jeseekia
+ *
+ */
+public class StudentInfo {
+
+	public static void main(String[] args) {
+		String userContinue;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Welcome to Prime Earth!");
+
+		do {
+			System.out.println("You can receive info about the following villains:\n Joker\tScarecrow\tCatwoman\tTwoFace\tBane\nPenguin\tRiddler\tPoison Ivy\tMr. Freeze(\"Freeze\")\tHarley Quinn(\"Quinn\")");
+			System.out.println("Enter the name of the villain you would like info on: ");
+			// TODO Check if the user puts in appropriate input
+//			while ( !valid input   ) {
+//				System.out.println("That is not a valid input. Please try again.");
+//				input.next();
+//			}
+			
+			//TODO create a way to iterate through a sentence
+			
+			
+			userInput = input.nextLine().toLowerCase();
+
+			userPigLatin = pigLatin(userInput);
+			
+			System.out.println("Your word has been converted to " + userPigLatin + ".");
+			System.out.println("Would you like to continue?(y/n)");
+			userContinue = input.nextLine();
+			
+		} while (userContinue.equalsIgnoreCase("y") == true);
+		
+		boolean isValidChoice = userContinue.matches("^[ynYN]$");
+			while (!isValidChoice) {
+				System.out.println("That is not a valid option");
+				System.out.println("Continue?");
+				userContinue = input.nextLine();
+			isValidChoice = userContinue.matches("^[ynYN]$");
+			}
+		
+		if (userContinue.equalsIgnoreCase("n") == true) {
+			System.out.println("The program will exit now.");
+			input.close();
+		}		
+
+	}
+
+	}
+
+

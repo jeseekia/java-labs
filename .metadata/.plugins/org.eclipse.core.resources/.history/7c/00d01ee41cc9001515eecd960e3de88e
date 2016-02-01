@@ -1,0 +1,150 @@
+import java.util.Scanner;
+
+/**
+ * This application is for Java Bootcamp Lab 7.
+ * Task: Write a program that will recognize invalid inputs when the user requests information about students in a class.
+ * 
+ * This application will:
+ * 		Provide information about students in a class
+ * 		Prompt the user to ask about a particular student
+ * 		Give proper responses according to user-submitted information
+ * 		Ask if user would like to learn about another student
+ * Build Specifications:
+ * 		Account for invalid user input with exceptions
+ * 		Try to incorporate IndexOutOfBoundsException and IllegalArgumentException
+ * Extended Challenges
+ * 		Create other exceptions and catch those too
+ */
+
+/**
+ * @author Jeseekia
+ *
+ */
+public class StudentInfo {
+
+	public static void main(String[] args) {
+		String userContinue;
+		Scanner input = new Scanner(System.in);
+		String userInput;
+		String userSelection;
+		int userSelectionIndex;
+		
+		String[] directoryArrayList = {"Joker","Scarecrow","Catwoman","Two-Face","Bane","Penguin","Riddler","Poison Ivy","Freeze","Quinn"};
+		String[] nameArrayList = {"There is no known name for the Joker","Professor Jonathan Crane","Selina Kyle","Harvey Dent","There is no known name for Bane","Oswald Cobblepot","Edward Nygma","Pamela Lillian Isley","Dr. Victor Fries","Dr. Harleen Quinzel"};
+		String[] factArrayList = {"Fact 0","Fact 1","Fact 2","Fact 3","Fact 4","Fact 5","Fact 6","Fact 7","Fact 8","Fact 9"};
+		
+		
+		System.out.println("Welcome to Prime Earth!");
+
+		do {
+			System.out.println("You can receive info about the following villains:\n Joker\t\tScarecrow\t\tCatwoman\t\tTwoFace\t\t\t\tBane\nPenguin\t\tRiddler\t\tPoison Ivy(\"Ivy\")\t\tMr. Freeze(\"Freeze\")\t\tHarley Quinn(\"Quinn\")");
+			System.out.println("Enter the name of the villain you would like info on: ");
+			// TODO Check if the user puts in appropriate input
+//			while ( !valid input   ) {
+//				System.out.println("That is not a valid input. Please try again.");
+//				input.next();
+//			}
+			
+			
+			
+			userInput = input.nextLine().toLowerCase().trim();
+
+			userSelectionIndex = studentSearch(userInput);
+			
+			System.out.println("What information would you like to know? (\"name\"/\"fact\"/\"both\")");
+			userSelection = input.nextLine().toLowerCase();
+			
+			try {
+				switch (userSelection) {
+				case "name":
+					System.out
+							.println(directoryArrayList[userSelectionIndex] + ": " + nameArrayList[userSelectionIndex]);
+					break;
+
+				case "fact":
+					System.out
+							.println(directoryArrayList[userSelectionIndex] + ": " + factArrayList[userSelectionIndex]);
+					break;
+
+				case "both":
+					System.out.println(directoryArrayList[userSelectionIndex] + ": " + nameArrayList[userSelectionIndex]
+							+ "Fun fact: " + factArrayList[userSelectionIndex]);
+					break;
+				}
+			} catch (ArrayIndexOutOfBoundsException e) {
+				System.out.println("It looks like you didn't enter one of our listed villains.");
+			}
+			System.out.println("Would you like to continue?(y/n)");
+			userContinue = input.nextLine();
+			
+		} while (userContinue.equalsIgnoreCase("y") == true);
+		
+		boolean isValidChoice = userContinue.matches("^[ynYN]$");
+			while (!isValidChoice) {
+				System.out.println("That is not a valid option");
+				System.out.println("Continue?");
+				userContinue = input.nextLine();
+			isValidChoice = userContinue.matches("^[ynYN]$");
+			}
+		
+		if (userContinue.equalsIgnoreCase("n") == true) {
+			System.out.println("The program will exit now.");
+			input.close();
+		}		
+
+	}
+	
+public static int studentSearch(String input) {
+	int userSelectionIndex = -1;
+	
+	switch(input) {
+	case "joker":
+		userSelectionIndex = 0;
+		break;
+		
+	case "scarecrow":
+		userSelectionIndex = 1;
+		break;
+		
+	case "catwoman":
+		userSelectionIndex = 2;
+		break;
+		
+	case "twoface":
+		userSelectionIndex = 3;
+		break;
+		
+	case "bane":
+		userSelectionIndex = 4;
+		break;
+		
+	case "penguin":
+		userSelectionIndex = 5;
+		break;	
+	case "riddler":
+		userSelectionIndex = 6;
+		break;
+		
+	case "ivy":
+		userSelectionIndex = 7;
+		break;
+		
+	case "freeze":
+		userSelectionIndex = 8;
+		break;	
+		
+	case "quinn":
+		userSelectionIndex = 9;
+		break;	
+		
+	default:
+		userSelectionIndex = -1;
+		
+	}
+	return userSelectionIndex;
+}
+	
+
+	}
+
+
