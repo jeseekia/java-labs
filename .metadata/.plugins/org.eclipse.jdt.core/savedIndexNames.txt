@@ -1,25 +1,9 @@
 INDEX VERSION 1.127+/Users/Jeseekia/Desktop/Github_Repos/java-labs/.metadata/.plugins/org.eclipse.jdt.core
-112833900.index
-2587947521.index
-1666608670.index
 1057672016.index
-1665731504.index
-2992301778.index
 996898981.index
-979578155.index
-2713797458.index
-998375213.index
 1665727645.index
-2889055758.index
-314395480.index
+1288060648.index
 2262707308.index
 3068978653.index
-4158903250.index
-2350957546.index
-3727397022.index
 1922020610.index
-811023603.index
-2353848150.index
-1823103826.index
-1271342938.index
-3450454389.index
+112833900.index
