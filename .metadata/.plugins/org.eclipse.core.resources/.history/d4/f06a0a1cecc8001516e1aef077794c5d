@@ -41,10 +41,6 @@ public class PigLatin {
 //				System.out.println("That is not a valid input. Please try again.");
 //				input.next();
 //			}
-			
-			//TODO create a way to iterate through a sentence
-			
-			
 			userInput = input.nextLine().toLowerCase();
 
 			userPigLatin = pigLatin(userInput);
@@ -77,7 +73,7 @@ public class PigLatin {
 			newWord = input.concat("w");
 			System.out.println("Vowel newWord: " + newWord);
 		} else {
-			while(!Character.toString(word.charAt(0)).matches("^[aeiou]$")) { //if the first letter of the word is not a vowel
+			while(!Character.toString(word.charAt(0)).matches("^[aeiou]$")) { //needs to be written so that it is checking the updated version of the word after each loop
 				
 				String charToString = Character.toString(word.charAt(0)); //Converts the first character to a string and stores it in charToString
 				char[] wordToArray = word.toCharArray(); //Converts the input to a char array
