@@ -72,18 +72,22 @@ public class PigLatin {
 		if(Character.toString(input.charAt(0)).matches("^[aeiou]$")) { //Converts the char at 0 to the Character class and checks if it is a vowel
 			newWord = input.concat("w");
 			System.out.println("Vowel newWord: " + newWord);
+			//return newWord;
 		} else {
 			while(!Character.toString(word.charAt(0)).matches("^[aeiou]$")) { //needs to be written so that it is checking the updated version of the word after each loop
 				
-				String charToString = Character.toString(word.charAt(0)); //Converts the first character to a string and stores it in charToString
-				char[] wordToArray = word.toCharArray(); //Converts the input to a char array
+				String charToString = Character.toString(input.charAt(0)); //Converts the first character to a string and stores it in charToString
+				char[] wordToArray = input.toCharArray(); //Converts the input to a char array
+//				System.out.println(wordToArray); //Test line
 				wordToArray[0] = ' ';
-				newWord = String.valueOf(wordToArray); //Converts the array representation of word back to a string
+				newWord = String.valueOf(wordToArray);
+//				System.out.println("Value of: " + newWord); //Test line
 				newWord = newWord.trim().concat(charToString);
 				word = newWord;
+				//return word;
 			}
+			newWord +="ay";
 		}
-		newWord +="ay";
 		return newWord;
 	}
 
