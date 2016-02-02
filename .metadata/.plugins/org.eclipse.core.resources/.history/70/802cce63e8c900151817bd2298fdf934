@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+/**
+ * 
+ */
+
+/**
+ * @author Jeseekia
+ *
+ */
+public class Batting {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		int userNumBatters;
+		int userAtBat;
+		int userNumBases;
+		int i;
+		int j;
+		int k;
+		int batterNumber = 0;
+		int maxAtBat = 0;
+		int currentAtBat = 0;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter the number of batters");
+		userNumBatters = input.nextInt();
+		
+		int[] [] batters = new int[userNumBatters] [];
+		for(i=0; i<userNumBatters; i++) {
+			batterNumber = i+1;
+			System.out.println("Enter the number of times at bat for Batter #" + batterNumber);
+			userAtBat = input.nextInt();
+			batters[i] = new int[userAtBat];
+
+			
+			for(j=0; j<userAtBat; j++) {
+				currentAtBat = j+1;
+				maxAtBat = userAtBat;
+				System.out.println("Enter the number of bases "+ currentAtBat + "/" + maxAtBat);
+				userNumBases = input.nextInt();
+				
+				batters [i][j] = userNumBases;
+				
+			}
+			
+		}
+		
+		for(int[] data : batters) {
+			System.out.println(batters [i][j] + "\t\t");
+		}
+		
+	}
+
+}

@@ -5,3 +5,4 @@ ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jdt.ui.editors.textfon
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
 eclipse.preferences.version=1
 org.eclipse.jdt.ui.editors.textfont=1|Monaco|11.0|0|COCOA|1|Monaco;
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\n<org.eclipse.ui.commands>\n<keyBinding commandId\="org.eclipse.ui.navigate.nextTab" contextId\="org.eclipse.jdt.ui.javaEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+ARROW_RIGHT"/>\n<keyBinding commandId\="org.eclipse.ui.navigate.previousTab" contextId\="org.eclipse.jdt.ui.javaEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+ARROW_LEFT"/>\n</org.eclipse.ui.commands>
