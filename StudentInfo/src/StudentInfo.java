@@ -31,7 +31,7 @@ public class StudentInfo {
 		
 		String[] directoryArrayList = {"Joker","Scarecrow","Catwoman","Two-Face","Bane","Penguin","Riddler","Poison Ivy","Freeze","Quinn"};
 		String[] nameArrayList = {"There is no known name for the Joker","Professor Jonathan Crane","Selina Kyle","Harvey Dent","There is no known name for Bane","Oswald Cobblepot","Edward Nygma","Pamela Lillian Isley","Dr. Victor Fries","Dr. Harleen Quinzel"};
-		String[] factArrayList = {"Fact 0","Fact 1","Fact 2","Fact 3","Fact 4","Fact 5","Fact 6","Fact 7","Fact 8","Fact 9"};
+		String[] factArrayList = {"The Joker began as \"Red Hood One,\" the leader of the Red Hood Gang, comprised of blackmailed individuals from the middle and upper classes of Gotham that the Red Hood kept under his sway.","Fact 1","Fact 2","Fact 3","Fact 4","Fact 5","Fact 6","Fact 7","Fact 8","Fact 9"};
 		
 		
 		System.out.println("Welcome to Prime Earth!");
