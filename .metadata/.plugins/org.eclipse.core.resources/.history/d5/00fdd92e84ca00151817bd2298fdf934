@@ -63,6 +63,7 @@ public class Batting {
 			double sluggingPercentage = bNumberCast/userAtBatCast;
 			
 			System.out.println();
+//			double d = 4.0;
 			System.out.println("bCount: " + bCount);
 			System.out.println("bNumber: " + bNumber);
 			System.out.println("Batting average: " + formatter.format(battingAverage));
@@ -73,6 +74,8 @@ public class Batting {
 		for (int a=0; a<batters.length; a++) {
 			
 			for(int b=0; b<batters[a].length; b++) {
+				//System.out.println(batters[a][b]);	 	//makes it possible for jagged arrays as well
+				//System.out.println(batters[a][b]);	// prints by columns instead of rows
 				System.out.print(batters[a][b] + "\t");
 			}
 			System.out.println();
