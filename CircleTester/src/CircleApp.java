@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * This is an application created for Java Bootcamp Lab 9
  * 
@@ -35,8 +37,10 @@ public class CircleApp {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
-		Circle myCircle = new Circle(4);
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a radius: ");
+		int userInput = input.nextInt();
+		Circle myCircle = new Circle(userInput);
 		
 		System.out.println("Area: "+ myCircle.getArea());
 		System.out.println("Formatted area: "+ myCircle.getFormattedArea());
