@@ -39,7 +39,10 @@ public class CircleApp {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a radius: ");
-		int userInput = input.nextInt();
+//		int userInput = input.nextInt();
+//		Circle myCircle = new Circle(userInput);
+		
+		int userInput = Validator.getValidInteger(input);
 		Circle myCircle = new Circle(userInput);
 		
 		System.out.println("Area: "+ myCircle.getArea());
