@@ -35,8 +35,13 @@ public class CircleApp {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Circle myCircle = new Circle(4);
+		
+		System.out.println("Area: "+ myCircle.getArea());
+		System.out.println("Formatted area: "+ myCircle.getFormattedArea());
+		System.out.println("Circumference: "+ myCircle.getCircumference());
+		System.out.println("Formatted circumference: "+ myCircle.getFormattedCircumference());
 	}
 
 }
