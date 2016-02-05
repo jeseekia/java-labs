@@ -46,8 +46,6 @@ public class CircleApp {
 			System.out.println("Enter radius: ");
 			double userInput = Validator.getValidDoubleInRange(0, 2147483647, input);
 			Circle myCircle = new Circle(userInput);
-			myCircle.getArea();
-			myCircle.getCircumference();
 			System.out.println("Circumference: " + myCircle.getFormattedCircumference());
 			System.out.println("Area: " + myCircle.getFormattedArea());
 			

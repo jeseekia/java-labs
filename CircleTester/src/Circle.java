@@ -10,10 +10,6 @@ import java.text.DecimalFormat;
  */
 public class Circle {
 	private double Radius;
-	private double Circumference;
-	private String FormattedCircumference;
-	private double Area;
-	private String FormattedArea;
 	
 	
 	public Circle(double mRadius) {
@@ -21,23 +17,19 @@ public class Circle {
 	}
 	
 	public double getCircumference() {
-		Circumference = 2*Math.PI*Radius;
-		return Circumference;
+		return 2*Math.PI*Radius;
 	}
 	
 	public String getFormattedCircumference() {
-		FormattedCircumference = formatNumber(Circumference);
-		return FormattedCircumference;
+		return formatNumber(getCircumference());
 	}
 	
 	public double getArea() {
-		Area = Radius*Radius*Math.PI;
-		return Area;
+		return Radius*Radius*Math.PI;
 	}
 	
 	public String getFormattedArea() {
-		FormattedArea = formatNumber(Area);
-		return FormattedArea;
+		return formatNumber(getArea());
 	}
 	
 	private String formatNumber(double x) {
