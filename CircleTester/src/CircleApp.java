@@ -65,6 +65,7 @@ public class CircleApp {
 		
 		
 		if (userContinue.equalsIgnoreCase("n") == true) {
+			System.out.println("Number of circles created: " + Circle.Counter);
 			System.out.println("Goodbye. Come back soon!");
 			input.close();
 		}

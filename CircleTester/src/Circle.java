@@ -10,9 +10,11 @@ import java.text.DecimalFormat;
  */
 public class Circle {
 	private double Radius;
+	public static int Counter;
 	
 	
 	public Circle(double mRadius) {
+		Counter++;
 		Radius = mRadius;
 	}
 	
@@ -37,5 +39,6 @@ public class Circle {
 		String formattedNumber = formatter.format(x);
 		return formattedNumber;
 	}
+	
 	
 }
