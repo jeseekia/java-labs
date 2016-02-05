@@ -40,16 +40,16 @@ public class CircleApp {
 		
 		Scanner input = new Scanner(System.in);
 		String userContinue;
-		
+		System.out.println("Welcome to the Circle Tester");
 		
 		do {
-			System.out.println("Enter a radius: ");
+			System.out.println("Enter radius: ");
 			double userInput = Validator.getValidDoubleInRange(0, 2147483647, input);
 			Circle myCircle = new Circle(userInput);
 			myCircle.getArea();
 			myCircle.getCircumference();
-			System.out.println("Formatted area: " + myCircle.getFormattedArea());
-			System.out.println("Formatted circumference: " + myCircle.getFormattedCircumference());
+			System.out.println("Circumference: " + myCircle.getFormattedCircumference());
+			System.out.println("Area: " + myCircle.getFormattedArea());
 			
 			System.out.println("Would you like to continue?(y/n)");
 			userContinue = input.nextLine();
@@ -67,7 +67,7 @@ public class CircleApp {
 		
 		
 		if (userContinue.equalsIgnoreCase("n") == true) {
-			System.out.println("The program will exit now.");
+			System.out.println("Goodbye. Come back soon!");
 			input.close();
 		}
 	}
