@@ -37,18 +37,36 @@ public class CircleApp {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter a radius: ");
-//		int userInput = input.nextInt();
-//		Circle myCircle = new Circle(userInput);
+		String userContinue;
 		
-		int userInput = Validator.getValidInteger(input);
-		Circle myCircle = new Circle(userInput);
 		
-		System.out.println("Area: "+ myCircle.getArea());
-		System.out.println("Formatted area: "+ myCircle.getFormattedArea());
-		System.out.println("Circumference: "+ myCircle.getCircumference());
-		System.out.println("Formatted circumference: "+ myCircle.getFormattedCircumference());
+		do {
+			System.out.println("Enter a radius: ");
+			int userInput = Validator.getValidInteger(input);
+			Circle myCircle = new Circle(userInput);
+			myCircle.getArea();
+			myCircle.getCircumference();
+			System.out.println("Formatted area: " + myCircle.getFormattedArea());
+			System.out.println("Formatted circumference: " + myCircle.getFormattedCircumference());
+			
+			System.out.println("Would you like to continue?(y/n)");
+			userContinue = input.nextLine();
+} while (userContinue.equalsIgnoreCase("y") == true);
+		
+		boolean isValidChoice = userContinue.matches("^[ynYN]$");
+			while (!isValidChoice) {
+				System.out.println("That is not a valid option");
+				System.out.println("Continue?");
+				userContinue = input.nextLine();
+			isValidChoice = userContinue.matches("^[ynYN]$");
+			}
+		
+		if (userContinue.equalsIgnoreCase("n") == true) {
+			System.out.println("The program will exit now.");
+			input.close();
+		}
 	}
 
 }
