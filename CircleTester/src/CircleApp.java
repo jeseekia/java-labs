@@ -44,7 +44,7 @@ public class CircleApp {
 		
 		do {
 			System.out.println("Enter a radius: ");
-			int userInput = Validator.getValidInteger(input);
+			double userInput = Validator.getValidDoubleInRange(0, 2147483647, input);
 			Circle myCircle = new Circle(userInput);
 			myCircle.getArea();
 			myCircle.getCircumference();
@@ -53,15 +53,18 @@ public class CircleApp {
 			
 			System.out.println("Would you like to continue?(y/n)");
 			userContinue = input.nextLine();
-} while (userContinue.equalsIgnoreCase("y") == true);
-		
-		boolean isValidChoice = userContinue.matches("^[ynYN]$");
+			
+			
+			boolean isValidChoice = userContinue.matches("^[ynYN]$");
 			while (!isValidChoice) {
 				System.out.println("That is not a valid option");
 				System.out.println("Continue?");
+				
 				userContinue = input.nextLine();
-			isValidChoice = userContinue.matches("^[ynYN]$");
+				isValidChoice = userContinue.matches("^[ynYN]$");
 			}
+} while (userContinue.equalsIgnoreCase("y") == true);
+		
 		
 		if (userContinue.equalsIgnoreCase("n") == true) {
 			System.out.println("The program will exit now.");
